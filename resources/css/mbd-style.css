@@ -1,0 +1,58 @@
+.mbd-conatiner table {
+  width: 96%;
+  border-collapse: collapse;
+}
+.mbd-conatiner table tr th, .mbd-conatiner table tr td {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  padding: 10px;
+  text-align: center;
+}
+
+.mbd-from-container form {
+  width: 60%;
+}
+.mbd-from-container form label {
+  display: block;
+  margin-bottom: 10px;
+}
+.mbd-from-container form input, .mbd-from-container form select {
+  width: 400px;
+}
+
+.mbd-manage-res-container table {
+  width: 96%;
+  border-collapse: collapse;
+}
+.mbd-manage-res-container table tr th, .mbd-manage-res-container table tr td {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+}
+.mbd-manage-res-container table tr th a, .mbd-manage-res-container table tr td a {
+  text-decoration: none;
+}
+
+.mbd-edit-form-container {
+  width: 410px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  z-index: 100;
+  box-shadow: 0px 1px 5px 0px rgba(161, 161, 161, 0.75);
+  padding: 10px;
+  border-radius: 10px;
+}
+.mbd-edit-form-container form {
+  width: 100%;
+}
+.mbd-edit-form-container form label {
+  display: block;
+  margin-bottom: 10px;
+}
+.mbd-edit-form-container form input, .mbd-edit-form-container form select {
+  width: 400px;
+}/*# sourceMappingURL=mbd-style.css.map */
