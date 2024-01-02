@@ -85,9 +85,25 @@ function mbd_create_admin_page(){
     add_submenu_page( $slug, 'Manages', 'Manages', $capability, 'manage_restrictions', 'mbd_manage_restrictions');
 
 
-    add_submenu_page( $slug, 'Settings', 'Settings', $capability, 'restrictions_setting', 'mbd_restrictions_setting');
+    // add_submenu_page( $slug, 'Settings', 'Settings', $capability, 'restrictions_setting', 'mbd_restrictions_setting');
 }
 add_action('admin_menu', 'mbd_create_admin_page');
+
+/**
+ * move the submenu undet Mb Syncs Menu 
+ * @author Fazle Bari
+ */
+function mb_category_restrictions_sync_menu_pages() {
+    add_submenu_page(
+        'mb_syncs',
+        'Category Restrictions Sync',
+        'Category Restrictions Sync',
+        'manage_options',
+        'restrictions_setting',
+        'mbd_restrictions_setting'
+    );
+}
+add_action('admin_menu', 'mb_category_restrictions_sync_menu_pages', 999);
 
 /**
  * Restriction Page main content
